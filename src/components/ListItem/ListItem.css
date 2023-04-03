@@ -1,0 +1,64 @@
+.container-notes {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    border-right: 1px solid  hsla(0,0%,52.9%,.2);
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F7;
+}
+
+.element-notes {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    block-size: 64px;
+    padding: 0;
+}
+
+.element-notes > div {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: SFUIText,Helvetica Neue,sans-serif;
+}
+
+.search-field {
+    font-family: SFUIText,Helvetica Neue,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    margin: 12px 16px;
+    background-color: #e2e2e7;
+    border-radius: 6px;
+    margin-top: 0;
+    height: 35px;
+    border: 1px solid hsla(0,0%,52.9%,.2);
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    margin: 18px 14px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.note {
+    border-bottom: 1px solid hsla(0,0%,52.9%,.2);
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.date-with-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.list-container  :hover {
+    background-color: #e2e2e7;
+    transition: 0.5s;
+}
+

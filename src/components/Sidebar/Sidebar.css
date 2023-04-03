@@ -1,0 +1,13 @@
+.nav-bar {
+    box-sizing: border-box;
+    block-size: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+img {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
