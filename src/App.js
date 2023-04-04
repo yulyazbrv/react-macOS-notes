@@ -8,6 +8,7 @@ function App() {
   const [notes, setNotes] = useState([]); 
   const [activeNote, setActiveNote] = useState('')
   const [activeNoteIndex, setActiveNoteIndex] = useState(null)
+  const [theme, setTheme] = useState('Dark theme');
 
   const parsedNoteName = (text) => {
     console.log("Active note ", activeNote);
@@ -32,12 +33,16 @@ function App() {
 
   const changeNote = (noteIndex) => {
     const currentNote = notes.find((item,index) => {
-      setActiveNoteIndex(index)
       return index === noteIndex
     })
     if(currentNote){
-      setActiveNote(JSON.stringify(currentNote))
-      setActiveNoteIndex(null);
+      //setActiveNote('');
+      setActiveNoteIndex(noteIndex)
+
+      console.log("Active note1 " , activeNote);
+      setActiveNote(currentNote.name)
+      console.log("Active note2 " , activeNote);
+      //setActiveNoteIndex(null);
       console.log("CurrentNote", JSON.stringify(currentNote));
     }
   }
@@ -51,8 +56,8 @@ function App() {
 
   return (
       <div className='main-container'>
-        <ListItem notes={notes} changeNote={changeNote}></ListItem>
-        <Workspace activeNoteIndex={activeNoteIndex} deleteNote={deleteNote} addNote={addNote} activeNote={activeNote} setActiveNote={setActiveNote}></Workspace>
+        <ListItem notes={notes} changeNote={changeNote} theme={theme}></ListItem>
+        <Workspace theme={theme} setTheme={setTheme} activeNoteIndex={activeNoteIndex} deleteNote={deleteNote} addNote={addNote} activeNote={activeNote} setActiveNote={setActiveNote}></Workspace>
       </div>
   );
 }

@@ -11,3 +11,23 @@ img {
     width: 25px;
     cursor: pointer;
 }
+
+.theme-button {
+    background-color: #e2e2e7;
+    text-decoration-color: black;
+    border: 1px solid hsla(0,0%,52.9%,.2);
+    border-radius: 6px;
+    width: auto;
+    height: 30px;
+    font-family: SFUIText,Helvetica Neue,sans-serif;
+}
+
+.theme-button-dark {
+    background-color: #1C1C1E;
+    color: #e2e2e7;
+    border: 1px solid hsla(0,0%,52.9%,.2);
+    border-radius: 6px;
+    width: auto;
+    height: 30px;
+    font-family: SFUIText,Helvetica Neue,sans-serif;
+}

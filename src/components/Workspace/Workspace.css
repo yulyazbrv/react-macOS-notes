@@ -15,26 +15,34 @@
     top: 15px;
 }
 
+.editorNote-dark {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    font-family: SFUIText,Helvetica Neue,sans-serif;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    cursor: text;
+    white-space: pre-wrap;
+    font-size: 20px;
+    position: relative;
+    left: 30px;
+    top: 15px;
+    color: #e2e2e7;
+    opacity: 0.5;
+}
+
 .container-editor {
     width: 65%;
     display: flex;
     flex-direction: column;
 }
 
-.editor {
-    font-family: SFUIText,Helvetica Neue,sans-serif;
-    font-weight: 400;
-    text-rendering: optimizeLegibility;
-    cursor: text;
-    margin: 0;
-    padding: 0;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    /* position: absolute; */
-    user-select: auto;
-    white-space: pre-wrap;
-    font-size: 0;
-    opacity: .001;
-    line-height: 40.0512px;
-    left: 30px;
-    top: 15px;
+.container-editor-dark {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
 }
