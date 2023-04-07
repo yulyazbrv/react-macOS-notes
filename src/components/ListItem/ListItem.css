@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 35%;
-    border-right: 1px solid  hsla(0,0%,52.9%,.2);
+    border-right: 1px solid hsla(0, 0%, 52.9%, .2);
     margin: 0;
     padding: 0;
     background-color: #F2F2F7;
@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     width: 35%;
-    border-right: 1px solid  #1C1C1E;
+    border-right: 1px solid #1C1C1E;
     margin: 0;
     padding: 0;
     background-color: black;
@@ -28,14 +28,14 @@
     padding: 0;
 }
 
-.element-notes > div {
+.element-notes>div {
     font-size: 20px;
     font-weight: 600;
-    font-family: SFUIText,Helvetica Neue,sans-serif;
+    font-family: SFUIText, Helvetica Neue, sans-serif;
 }
 
 .search-field {
-    font-family: SFUIText,Helvetica Neue,sans-serif;
+    font-family: SFUIText, Helvetica Neue, sans-serif;
     font-size: 15px;
     font-weight: 400;
     user-select: none;
@@ -46,11 +46,15 @@
     border-radius: 6px;
     margin-top: 0;
     height: 35px;
-    border: 1px solid hsla(0,0%,52.9%,.2);
+    border: 1px solid hsla(0, 0%, 52.9%, .2);
+}
+
+input:focus {
+    outline: 0;
 }
 
 .search-field-dark {
-    font-family: SFUIText,Helvetica Neue,sans-serif;
+    font-family: SFUIText, Helvetica Neue, sans-serif;
     text-decoration-color: #e2e2e7;
     font-size: 15px;
     font-weight: 400;
@@ -62,7 +66,8 @@
     border-radius: 6px;
     margin-top: 0;
     height: 35px;
-    border: 1px solid black ;
+    border: 1px solid black;
+    color: white;
 }
 
 .list-container {
@@ -82,7 +87,7 @@
 }
 
 .note {
-    border-bottom: 1px solid hsla(0,0%,52.9%,.2);
+    border-bottom: 1px solid hsla(0, 0%, 52.9%, .2);
     height: auto;
     padding-left: 10px;
     padding-right: 10px;
@@ -100,21 +105,19 @@
     flex-direction: row;
 }
 
-.list-container  :hover {
+.list-container :hover {
     background-color: #e2e2e7;
     transition: 0.5s;
 }
 
-.list-container-dark  :hover {
+.list-container-dark :hover {
     background-color: #111112;
     transition: 0.5s;
 }
 
-.name-note {
-}
+.name-note {}
 
 .name-note-dark {
     color: #e2e2e7;
     opacity: 0.5;
 }
-
