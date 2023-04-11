@@ -91,6 +91,7 @@ input:focus {
     height: auto;
     padding-left: 10px;
     padding-right: 10px;
+    cursor: pointer;
 }
 
 .note-dark {
@@ -120,4 +121,11 @@ input:focus {
 .name-note-dark {
     color: #e2e2e7;
     opacity: 0.5;
+}
+
+img {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    margin-right: 5px;
 }

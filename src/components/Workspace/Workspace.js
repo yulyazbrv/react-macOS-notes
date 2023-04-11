@@ -11,7 +11,9 @@ const Workspace = (props) => {
     deleteNote,
     theme,
     setTheme,
-    changeNote
+    changeNote,
+    activeFolder,
+    restoreNote
   } = props;
 
   return (
@@ -26,6 +28,8 @@ const Workspace = (props) => {
         activeNoteIndex={activeNoteIndex}
         theme={theme}
         setTheme={setTheme}
+        activeFolder={activeFolder}
+        restoreNote={restoreNote}
       ></Sidebar>
       <div className="note-pad">
         <div
@@ -35,7 +39,6 @@ const Workspace = (props) => {
           dangerouslySetInnerHTML={{__html: activeNote}}
           onBlur={(e) => {
             if(activeNoteIndex !== null){
-                console.log(activeNoteIndex);
                 changeNote(e.currentTarget.innerHTML);
             }else{
                 setActiveNote(e.currentTarget.innerHTML)
